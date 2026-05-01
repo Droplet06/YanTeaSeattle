@@ -80,14 +80,16 @@ function renderFeatured() {
   if (!grid) return;
   grid.innerHTML = featured.map(item => `
     <div class="feat-card">
-      <div class="feat-img-area">
-        <span class="feat-img-placeholder">${item.zh.charAt(0)}</span>
-      </div>
+      <div class="feat-card-accent"></div>
       <div class="feat-body">
         <p class="feat-tag">${catLabel[item.cat] || item.cat}</p>
+        <div class="feat-divider"></div>
         <p class="feat-zh">${item.zh}</p>
-        <p class="feat-en">${item.en}</p>
-        <p class="feat-price">$${item.price.toFixed(2)}</p>
+        <p class="feat-en">${item.en.replace(/ \d+oz$/, '')}</p>
+        <div class="feat-footer">
+          <span class="feat-size">22 oz</span>
+          <span class="feat-price">$${item.price.toFixed(2)}</span>
+        </div>
       </div>
     </div>
   `).join('');
