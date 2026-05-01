@@ -78,21 +78,24 @@ const featured = (() => {
 function renderFeatured() {
   const grid = document.getElementById('featuredGrid');
   if (!grid) return;
-  grid.innerHTML = featured.map(item => `
+  grid.innerHTML = featured.map((item, i) => {
+    const enClean = item.en.replace(/ \d+oz$/, '').replace(/ \d+ oz$/, '');
+    const badge = i === 0 ? '<span class="feat-badge">Popular</span>' : '';
+    return `
     <div class="feat-card">
       <div class="feat-card-accent"></div>
       <div class="feat-body">
-        <p class="feat-tag">${catLabel[item.cat] || item.cat}</p>
+        <p class="feat-tag">${catLabel[item.cat] || item.cat}${badge}</p>
         <div class="feat-divider"></div>
         <p class="feat-zh">${item.zh}</p>
-        <p class="feat-en">${item.en.replace(/ \d+oz$/, '')}</p>
+        <p class="feat-en">${enClean}</p>
         <div class="feat-footer">
           <span class="feat-size">22 oz</span>
           <span class="feat-price">$${item.price.toFixed(2)}</span>
         </div>
       </div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 }
 
 /* ── LANGUAGE ───────────────────────────────────────── */
