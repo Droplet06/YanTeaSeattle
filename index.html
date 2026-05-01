@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YAN TEA 岩茶 · Seattle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Serif+SC:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<!-- ═══ NAV ═══════════════════════════════════════════ -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <span class="nav-logo-yan">岩</span>
+    <span class="nav-logo-div"></span>
+    <span class="nav-logo-en">YAN TEA</span>
+  </a>
+
+  <div class="nav-center">
+    <a href="#featured">
+      <span class="en">Menu</span>
+      <span class="zh" style="display:none">菜单</span>
+    </a>
+    <a href="#about">
+      <span class="en">Our Story</span>
+      <span class="zh" style="display:none">品牌故事</span>
+    </a>
+    <a href="#findus">
+      <span class="en">Visit</span>
+      <span class="zh" style="display:none">到访</span>
+    </a>
+  </div>
+
+  <div class="nav-right">
+    <button class="lang-btn active" id="langEn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" id="langZh" onclick="setLang('zh')">中文</button>
+    <a class="order-btn" href="https://order.toasttab.com/online/yan-tea-4744-university-way-ne" target="_blank" rel="noopener">
+      <span class="en">Order Now</span>
+      <span class="zh" style="display:none">立即点单</span>
+    </a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-wordmark" aria-hidden="true">岩茶<span>YAN TEA</span></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <p class="hero-eyebrow en">University District · Seattle · Since 2019</p>
+      <p class="hero-eyebrow zh" style="display:none">大学区 · 西雅图 · 2019年创立</p>
+
+      <h1 class="hero-h1">
+        <span class="en">Fresh fruit tea,<br>cheese foam,<br><strong>Seattle rhythm.</strong></span>
+        <span class="zh" style="display:none">鲜果茶，<br>芝士奶盖，<br><strong>西雅图的节奏。</strong></span>
+      </h1>
+
+      <p class="hero-sub en">Real tea, real fruit, made fresh every day — right here in the University District.</p>
+      <p class="hero-sub zh" style="display:none">真材实料，每日现制，就在西雅图大学区。</p>
+
+      <div class="hero-ctas">
+        <a class="btn-primary" href="https://order.toasttab.com/online/yan-tea-4744-university-way-ne" target="_blank" rel="noopener">
+          <span class="en">Order Now</span>
+          <span class="zh" style="display:none">立即点单</span>
+        </a>
+        <a class="btn-secondary" href="#featured">
+          <span class="en">See our drinks →</span>
+          <span class="zh" style="display:none">查看饮品 →</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-img-frame">
+        <img class="hero-img" src="assets/images/hero/hero-main.jpg" alt="Yan Tea signature drinks">
+      </div>
+      <p class="hero-tag">YAN TEA 岩茶 · Seattle</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURED DRINKS ════════════════════════════════ -->
+<section id="featured">
+  <div class="featured-inner">
+    <div class="featured-header">
+      <div>
+        <p class="section-label en reveal">Our Favorites</p>
+        <p class="section-label zh reveal" style="display:none">精选饮品</p>
+        <h2 class="section-title en reveal">A few to start with.</h2>
+        <h2 class="section-title zh reveal" style="display:none">六杯入门</h2>
+      </div>
+      <div class="featured-header-cta reveal">
+        <a class="btn-outline" href="https://order.toasttab.com/online/yan-tea-4744-university-way-ne" target="_blank" rel="noopener">
+          <span class="en">Order Online →</span>
+          <span class="zh" style="display:none">立即点单 →</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="feat-grid" id="featuredGrid"></div>
+
+    <div class="featured-footer reveal">
+      <a href="https://order.toasttab.com/online/yan-tea-4744-university-way-ne" target="_blank" rel="noopener">
+        <span class="en">View full menu on Toast →</span>
+        <span class="zh" style="display:none">在Toast查看完整菜单 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══════════════════════════════════════════ -->
+<section id="about">
+  <div class="about-inner">
+    <div class="about-visual reveal">
+      <div class="about-wordmark">YAN</div>
+      <div class="about-since">Est. 2019</div>
+    </div>
+
+    <div class="about-body">
+      <p class="section-label en reveal">Our Story</p>
+      <p class="section-label zh reveal" style="display:none">品牌故事</p>
+
+      <h2 class="section-title en reveal">Born in Seattle's<br>University District.</h2>
+      <h2 class="section-title zh reveal" style="display:none">生于西雅图<br>大学区。</h2>
+
+      <div class="reveal">
+        <p class="en">Yan Tea opened in 2019 with a single belief: <strong>great tea deserves great ingredients.</strong> Fresh fruit, real cheese foam, hand-crafted toppings — no shortcuts, no compromises.</p>
+        <p class="zh" style="display:none">岩茶于2019年开业，秉持一个信念：<strong>好茶配好料。</strong>新鲜水果、真正的芝士奶盖、手工小料——不走捷径，不妥协品质。</p>
+
+        <p class="en"><strong>岩 (Yán)</strong> — rock, depth, origin. For us, it means drinks made with care, every single day.</p>
+        <p class="zh" style="display:none"><strong>岩</strong>，代表岩石、深度与根源。对我们来说，它意味着每天用心制作每一杯好茶。</p>
+
+        <p class="en">Find us at <strong>4744 University Way NE</strong>. Walk-ins always welcome.</p>
+        <p class="zh" style="display:none">欢迎来访：<strong>大学路NE 4744号</strong>，随时欢迎到店。</p>
+      </div>
+
+      <div class="about-stats reveal">
+        <div>
+          <div class="stat-num">6+</div>
+          <div class="stat-label en">Years in Seattle</div>
+          <div class="stat-label zh" style="display:none">深耕西雅图</div>
+        </div>
+        <div>
+          <div class="stat-num">9</div>
+          <div class="stat-label en">Drink Series</div>
+          <div class="stat-label zh" style="display:none">招牌系列</div>
+        </div>
+        <div>
+          <div class="stat-num">100+</div>
+          <div class="stat-label en">Yelp Reviews</div>
+          <div class="stat-label zh" style="display:none">顾客好评</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FIND US ════════════════════════════════════════ -->
+<section id="findus">
+  <div class="findus-info">
+    <p class="section-label en">Visit Us</p>
+    <p class="section-label zh" style="display:none">到访我们</p>
+    <h2 class="section-title en">Come find<br>your rock.</h2>
+    <h2 class="section-title zh" style="display:none">找到属于<br>你的岩茶</h2>
+
+    <div class="findus-detail">
+      <div class="detail-row">
+        <div class="detail-icon"></div>
+        <div>
+          <p class="detail-label en">Address</p>
+          <p class="detail-label zh" style="display:none">地址</p>
+          <p class="detail-value">4744 University Way NE<br>Seattle, WA 98105</p>
+        </div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-icon"></div>
+        <div>
+          <p class="detail-label en">Phone</p>
+          <p class="detail-label zh" style="display:none">电话</p>
+          <p class="detail-value"><a href="tel:2062570168">(206) 257-0168</a></p>
+        </div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-icon"></div>
+        <div>
+          <p class="detail-label en">Hours</p>
+          <p class="detail-label zh" style="display:none">营业时间</p>
+          <p class="detail-value en">Check Google Maps for current hours</p>
+          <p class="detail-value zh" style="display:none">请查看谷歌地图获取最新时间</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="findus-platforms">
+      <a class="platform-pill" href="https://www.ubereats.com/store/yan-tea-seattle/J-fp27bsW--m_XQpIz4rbQ" target="_blank" rel="noopener">Uber Eats</a>
+      <a class="platform-pill" href="https://order.toasttab.com/online/yan-tea-4744-university-way-ne" target="_blank" rel="noopener">Toast</a>
+      <a class="platform-pill" href="https://www.yelp.com/biz/yan-tea-seattle-3" target="_blank" rel="noopener">Yelp</a>
+      <a class="platform-pill" href="https://www.instagram.com/yantea_seattle/" target="_blank" rel="noopener">Instagram</a>
+      <a class="platform-pill" href="https://www.facebook.com/101796864687951" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+
+  <div class="findus-map">
+    <div class="map-rings"></div>
+    <div class="map-rings"></div>
+    <div class="map-rings"></div>
+    <div class="map-pin"></div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="logo-text">YAN TEA 岩茶</p>
+        <p class="tagline en">University District · Seattle · Since 2019</p>
+        <p class="tagline zh" style="display:none">西雅图大学区 · 2019年创立</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 class="en">Order</h4>
+          <h4 class="zh" style="display:none">点单</h4>
+          <a href="https://order.toasttab.com/online/yan-tea-4744-university-way-ne" target="_blank" rel="noopener">Toast Online</a>
+          <a href="https://www.ubereats.com/store/yan-tea-seattle/J-fp27bsW--m_XQpIz4rbQ" target="_blank" rel="noopener">Uber Eats</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="en">Connect</h4>
+          <h4 class="zh" style="display:none">联系我们</h4>
+          <a href="https://www.instagram.com/yantea_seattle/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/101796864687951" target="_blank" rel="noopener">Facebook</a>
+          <!-- TODO --><a href="#">TikTok</a>
+          <!-- TODO --><a href="#">WeChat 微信</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="en">Visit</h4>
+          <h4 class="zh" style="display:none">到访</h4>
+          <a href="https://www.yelp.com/biz/yan-tea-seattle-3" target="_blank" rel="noopener">Yelp Reviews</a>
+          <a href="https://maps.google.com/?q=4744+University+Way+NE+Seattle" target="_blank" rel="noopener">Google Maps</a>
+          <a href="tel:2062570168">(206) 257-0168</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Yan Tea Seattle. All rights reserved.</p>
+      <p>4744 University Way NE, Seattle WA 98105</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
